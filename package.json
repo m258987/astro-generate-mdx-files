@@ -1,0 +1,26 @@
+{
+  "name": "generate-files-astro-example",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "generate:blog": "npx ts-node -r dotenv/config --experimental-specifier-resolution=node --esm ./src/code-gen/blog/generate.mts",
+    "write:blog": "npx ts-node -r dotenv/config --experimental-specifier-resolution=node --esm ./src/code-gen/blog/write.mts"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/mdx": "^1.1.5",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.3",
+    "@types/fs-extra": "^11.0.4",
+    "astro": "^3.6.4",
+    "contentful": "^10.6.13",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.3.2"
+  }
+}
